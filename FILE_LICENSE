@@ -1,0 +1,270 @@
+                          SOURCE CODE FILE LICENSING
+                          ==========================
+
+Author: Stephen Abson
+
+Purpose
+=======
+
+Describes how to add source code level GPL license statement to OMIS source code
+files.
+
+Java
+====
+
+Place at the begining of the file starting on the first line This is before the
+package (there should not be a package Javadoc comment - remove if there is).
+
+This is not a Javadoc comment and will not be included in the API documentation.
+
+Example:
+
+/*
+ * OMIS - Offender Management Information System
+ * Copyright (C) 2011 - 2017 State of Montana
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package omis.module;
+
+/**
+ * Class comments.
+ *
+ * @author M. Developer
+ * @version 1.0.23
+ * @since OMIS 3.0
+ */
+public class EntityClass {
+	...
+}
+
+XML
+===
+
+Place after XML declaration (<?xml version="1.0" encoding="UTF-8"?>) and before
+other XML content including comments on the purpose of the XML file:
+
+Example:
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ - OMIS - Offender Management Information System
+ - Copyright (C) 2011 - 2017 State of Montana
+ -
+ - This program is free software: you can redistribute it and/or modify
+ - it under the terms of the GNU General Public License as published by
+ - the Free Software Foundation, either version 3 of the License, or
+ - (at your option) any later version.
+ -
+ - This program is distributed in the hope that it will be useful,
+ - but WITHOUT ANY WARRANTY; without even the implied warranty of
+ - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ - GNU General Public License for more details.
+ -
+ - You should have received a copy of the GNU General Public License
+ - along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<!--
+  - Configuration file comments.
+  -
+  - Author: M. Developer
+  -->
+<elements>
+...
+</elements>
+ 
+JSP - XHTML Web Page
+====================
+
+Place after XML declaration (<?xml version="1.0" encoding="UTF-8"?> - screen
+JSPs require this) and before other XHTML/JSP content including the purpose of
+the screen.
+
+Use JSP comments (<%-- -->) so the comment is not included in the content sent
+to the web client.
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<%--
+ - OMIS - Offender Management Information System
+ - Copyright (C) 2011 - 2017 State of Montana
+ -
+ - This program is free software: you can redistribute it and/or modify
+ - it under the terms of the GNU General Public License as published by
+ - the Free Software Foundation, either version 3 of the License, or
+ - (at your option) any later version.
+ -
+ - This program is distributed in the hope that it will be useful,
+ - but WITHOUT ANY WARRANTY; without even the implied warranty of
+ - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ - GNU General Public License for more details.
+ -
+ - You should have received a copy of the GNU General Public License
+ - along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ --%>
+
+<%--
+  - Screen to edit content.
+  -
+  - Author: M. Developer
+  --%>
+<html>
+	...
+</html>
+
+JSP - XHTML Snippet or Other Dynamic Content Generated from a JSP (CSS, JS)
+===========================================================================
+
+Place at the beginning of the file starting on the first line. JSP snippets that
+generate parts of an XHTML document or dynamic CSS or JavaScript do not require
+an XML declaration (it is only required at the start of the XML document).
+
+Use JSP comments (<%-- -->) so the comment is not included in the content sent
+to the web client.
+
+Example:
+
+<%--
+ - OMIS - Offender Management Information System
+ - Copyright (C) 2011 - 2017 State of Montana
+ -
+ - This program is free software: you can redistribute it and/or modify
+ - it under the terms of the GNU General Public License as published by
+ - the Free Software Foundation, either version 3 of the License, or
+ - (at your option) any later version.
+ -
+ - This program is distributed in the hope that it will be useful,
+ - but WITHOUT ANY WARRANTY; without even the implied warranty of
+ - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ - GNU General Public License for more details.
+ -
+ - You should have received a copy of the GNU General Public License
+ - along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ --%>
+
+<%--
+  - Form to edit content.
+  -
+  - Author: M. Developer
+  --%>
+<form:form commandName="entityForm">
+	...
+</form:form>
+
+JavaScript
+==========
+
+Place at the start of the JavaScript file before content or comments on what
+behavior the JavaScript file provides. 
+
+This is not a JSDoc comment and will not be included in the API documentation.
+
+Example:
+
+/*
+ * OMIS - Offender Management Information System
+ * Copyright (C) 2011 - 2017 State of Montana
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Applies screen behavior.
+ *
+ * @author: M. Developer
+ */
+window.onload = function()  {
+	...
+};
+ 
+CSS
+===
+
+Place at the start of the CSS file starting on the first line before content or
+comments on what styling the stylesheet provides.
+
+Example:
+
+/*
+ * OMIS - Offender Management Information System
+ * Copyright (C) 2011 - 2017 State of Montana
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Styles the screen.
+ *
+ * Author: M. Developer
+ */
+form select {
+	...
+}
+
+Properties Files
+================
+
+Place at the start of the properties file starting on the first line before
+content or comments on what properties are included in the file.
+
+Example:
+
+#
+# OMIS - Offender Management Information System
+# Copyright (C) 2011 - 2017 State of Montana
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+#
+# Module messages
+#
+# Author: M. Developer
+#
+entityCategoryLabel=Category
