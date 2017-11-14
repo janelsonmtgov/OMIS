@@ -39,7 +39,4 @@ derby.log
 # Excludes potentially proprietary content
 # TODO - Replace proprietary content, remove this
 src/main/webapp/resources/common/images/
-src/main/webapp/resources/3rdparty/JQuery/ui/jquery.ptTimeSelect.js
-src/main/webapp/resources/3rdparty/JQuery/dataTables/jquery.dataTables.min.js
-src/main/webapp/resources/3rdparty/JQuery/ui/jquery.tablesorter.min.js
-src/main/webapp/resources/3rdparty/JQuery/ui/jquery.tablesorter.pager.js
+src/main/webapp/resources/3rdparty/
