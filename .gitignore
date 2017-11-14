@@ -29,14 +29,17 @@ src/main/webapp/WEB-INF/config/env/prod/
 src/main/webapp/WEB-INF/config/env/preprod/
 
 # Excludes Derby log
-# TODO - configure Derby log to be located outside of the project, remove this
+# TODO - Configure Derby log to be located outside of the project, remove this
 derby.log
 
 # Excludes SVN files
-# TODO - switch to Git, remove this
+# TODO - Switch to Git, remove this
 .svn/
 
 # Excludes potentially proprietary content
 # TODO - Replace proprietary content, remove this
 src/main/webapp/resources/common/images/
 src/main/webapp/resources/3rdparty/JQuery/ui/jquery.ptTimeSelect.js
+src/main/webapp/resources/3rdparty/JQuery/dataTables/jquery.dataTables.min.js
+src/main/webapp/resources/3rdparty/JQuery/ui/jquery.tablesorter.min.js
+src/main/webapp/resources/3rdparty/JQuery/ui/jquery.tablesorter.pager.js
